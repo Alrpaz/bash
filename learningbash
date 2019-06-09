@@ -1,0 +1,117 @@
+
+# [[:digit:]] - example grep [[:digit:]] bashnotes = ip line 
+
+# find /home/badwolf -name "*.sh" -type -f -maxdepth 3 = finds all matching .sh files
+
+#within 3 directories deep/ using the 'find' cmd more in depth - can also use size +5m
+
+#chmod a+x sets primary read/write ability (as wwell as 777)
+----------------------------
+## TESTING SCRIPTS
+
+
+echo output of ls command:
+ls
+echo #empty line
+echo output of pwd command:
+pwd
+
+### END ### 
+
+
+
+#!/bin/bash
+
+#start time measurement from here
+
+START=$(date +%s)
+
+CURRENT_DIRECTORY=$(pwd)
+sleep 5 #####  sleep 2 seconds ## COULD BE USED WITH DD COPY CMD instead of sleep to copy files
+
+END=$(date +%s)
+
+#end time measurement 
+DIFFERENCE=$(( END - START ))
+
+
+echo Time elapsed: $DIFFERENCE seconds.
+
+
+
+
+##END##
+
+
+
+#!/bin/bash
+echo "Enter your age"
+read AGE
+echo "Your age is: $AGE"
+##END##
+
+
+
+
+#!/bin/bash
+
+echo -n Your name:
+read NAME
+
+echo -n Your age:
+read AGE
+
+echo
+echo ===Employee statistics===
+echo Name: $NAME
+echo AGE: $AGE
+#
+##END##
+
+
+
+
+#!/bin/bash
+
+read HOSTNAME < /etc/hostname
+echo Hostname: $HOSTNAME
+##END##
+#!/bin/bash
+
+read -p "Your name: " NAME
+
+read -sp "Your age:" AGE
+echo
+echo "Name: $NAME, AGE: $AGE"
+
+##END##
+
+
+
+
+#!/bin/bash
+
+CURRENT_DIRECTORY='pwd'
+echo "Script is run from: $CURRENT_DIRECTORY"
+##END##
+
+
+
+
+#!/bin/bash
+
+COUNT=5
+
+echo "count = $COUNT"
+
+echo We have $COUNT oranges today
+
+MESSAGE="hello"
+
+echo "message: $MESSAGE"
+
+##END###
+
+
+
+

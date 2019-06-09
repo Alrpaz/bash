@@ -1,6 +1,0 @@
-
-# [[:digit:]] - example grep [[:digit:]] bashnotes = ip line 
-
-# find /home/badwolf -name "*.sh" -type -f -maxdepth 3 = finds all matching .sh files
-#within 3 directories deep/ using the 'find' cmd more in depth - can also use size +5m
-#chmod a+x sets primary read/write ability (as wwell as 777)
