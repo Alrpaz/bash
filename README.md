@@ -10,6 +10,10 @@ cd = change directory, can change to a currently listed directory or use / to go
 
 ls = list current directories contents (i prefer ls -alhF) alhF are all each different operators telling it to output a different style, each can be used alone, like -a, or together. as -a -l -h -F would also work
 
+lsblk - list all disk/partitions
+df - similar output 
+du - disk usage by program
+
 pwd = print working directory (example /home/drew)
 
 date = prints current date information.
