@@ -1,3 +1,5 @@
+#read - read variable = asks owner for variable(text) to assign to $variable. -s for showing question in text - (read -s password) -sp can be used to hide digits typed
+
 
 # [[:digit:]] - example grep [[:digit:]] bashnotes = ip line 
 
