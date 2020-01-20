@@ -1,0 +1,29 @@
+#!/bin/bash
+echo " ************************************************* "
+echo "******* CONVERT FROM FARENHEIT OR CELCIUS ********"
+echo " ************************************************* "
+echo " TIP::: Please enter a C or an F following your input so the script can read what you are saying"
+echo " _________________________________________________ "
+
+echo "Enter your value: "
+read _input
+
+if [[ $(echo "$_input" | grep "C") ]]; then
+        echo "You've entered a celsius value."
+        _input=$(echo "$_input" | sed 's/C//g')
+        _calc=$(echo "scale=2;((9/5) * $_input) + 32" | bc)
+        echo "$_input -> ${_calc}F"
+elif [[ $(echo "$_input" | grep "F") ]]; then
+        echo "You've entered a fahrenheit value."
+        _input=$(echo "$_input" | sed 's/F//g')
+        _calc=$(echo "scale=2;($_input - 32) * (5/9)" | bc)
+        _calc=$((($_input - 32) * 5/9))
+        echo "$_input -> ${_calc}C"
+else
+        echo "Please use a statement ending in C or F."
+fi
+
+
+
+### Writer = Cody Watson
+### Updates = Drew Grier
