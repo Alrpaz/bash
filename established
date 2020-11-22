@@ -1,0 +1,4 @@
+
+#shows established conns
+
+netstat -natu | grep 'ESTABLISHED'
