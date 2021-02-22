@@ -48,6 +48,6 @@ above output would find all amd pci devices
 
 lscpu = list cpu info basic
 
-smartctl = manuel pages may be needed, large group of smart testing tools for hdd, example smartctl --al /dev/sda to see all smart data... tests can also be run
+smartctl = large group of smart testing tools for hdd, example smartctl --al /dev/sda to see all smart data... tests can also be run
 
-
+man = manuel tools - man $CMD bring up cmd's info
