@@ -1,0 +1,15 @@
+# use the notes from while_Example.sh to run this one, you can modify it and see how a function() works in linux while loops and functions are in a lot of the code we use if you want to start writing
+#example... you could add this bit to your .bashrc and have the function execute on command ( such as everytime you refresh )
+
+#!/bin/bash
+
+mydate(){
+
+        echo "today is: "
+        date
+        echo " be safe ! "
+}
+
+## ANY ECHO POSTED HERE WILL GO BEFORE THE INITIAL OUTPUT
+
+mydate
