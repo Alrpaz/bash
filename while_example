@@ -1,0 +1,27 @@
+# save this file as ./while.sh  ( we add the ./ and .sh for executable to linux ) 
+# run : chmod 777 ./while.sh
+# above gives you admin rights all around to run the script
+
+# edit the script with nano ./while.sh (begin using the tab to complete function when using the command line... if there is any file in the directory with the letters your typing, it will auto fill for you if you begin with , example.. while so type ./wh and hit tab and it will complete for you.
+
+### the # symbol in front of any line makes linux not read this line, it is a comment line.(careful when pasting that all non-lines are #'d out)
+# the main example of this not being the case is #!/bin/bash - this indicates that the file is executable to the linux kernel - below is how any executable should start
+#
+
+# once you have ran this script once you will see it has an output of the numbers within the range provided in the script, come in with nano and change the numbers and mess with a while loop a little bit... see what happens when you try the negative numbers. 
+
+# script is all below this line ------- below .. i have used # because this is a github script as well.
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+#!/bin/bash                          
+
+echo " hello "
+
+number=9
+
+while [ $number -le 27 ];
+do
+        echo " number is $number "
+        number=$(( number + 2 ))
+
+done
